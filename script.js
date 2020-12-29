@@ -25,7 +25,7 @@ window.addEventListener("load", function() {
          return;
       }
 
-      if (!typeof pilotName.value === 'string' || !typeof copilotName.value === 'string' || parseInt(fuelLevel.value) === NaN|| parseInt(cargoMass.value) === NaN) {
+      if (!typeof pilotName.value === 'string' || !typeof copilotName.value === 'string' || isNaN(fuelLevel.value) || isNaN(cargoMass.value) ) {
          alert("Field type invalid!");
          event.preventDefault();
          return;
